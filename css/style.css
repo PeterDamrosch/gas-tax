@@ -17,9 +17,20 @@
 }​​
 
 
-.states :hover {
-    fill: red;
-}
+ .state-no-highlight {
+     stroke: #fff;
+     stroke-width: 0.5px;
+
+ }
+
+
+.state-highlight {
+    stroke: darkred;
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+ }
 
 .state-borders {
     fill: none;
@@ -29,6 +40,8 @@
     stroke-linecap: round;
     pointer-events: none;
 }
+
+
 
 .navbar-nav {
     padding-right: 3px;
@@ -51,7 +64,58 @@
     padding-bottom: 60px
 }
 
+#title-name {
+    margin-left: 15px;
+}
+
 #slider {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+/* Style for Custom Tooltip */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#sidebar {
+    position: relative;
+    left: 1000px;
+    bottom: 550px;
+    height: 550px;
+    width: 250px;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height:26.4px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+#sidebar-title {
+    font-size:36px;
+}
+
+#sidebar-cutoff {
+    font-size:16px;
+    margin-top: 30px;
+
+}
+
+#sidebar-count {
+    font-size:16px;
+    margin-top: 10px;
+
 }
